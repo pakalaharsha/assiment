@@ -1,0 +1,134 @@
+pag:41
+1.mkir test
+2.cat > employeeslist
+  #cat >skillset
+3.mkir test2
+ # symbolic link : ln -s ../skillset skillset2
+ #hardlink : ln ../skillset1 skillset2
+4  chmod 664 <filename>
+5.user12@Trainingserver:/home/user2/test$ cat >> skillset 
+6.chmod 662 filename
+7.chmod 775 filename
+8. chgro user3 employeelist
+9. chown user5 employeelist
+10.wc employees
+
+
+#
+
+
+pag:47
+1.cat >file1
+2.cat >> file1
+3.cat > file2
+4.cat file1 , cat file2
+5.cat file1 file2
+6. cat file1 file2 > file3
+7.cat file1 file2 file3 file4 file5
+8. cat file1 file2 file3 file4 file5 1>errlog
+9.cat file1 file2 file3 file4 file5 > file10
+10.cp file1 file6
+
+#
+
+
+
+pag:55
+1.create a file1 for 30 lines  
+  head -25 file1 | file +10
+2. head -10 file1 | file +10
+3. find . -type f -newrmt "1 minutes"
+4. ls -lSr
+5.wc -l file2
+6.find test -type f -mtime +3. 
+
+#
+
+
+pag:61
+1. cat file1 | grep a
+2. cat file1 | grep ^the
+3.cat file1 | grep [.]
+4. cat file1 | grep [ __a] [__b] [__c]
+5. cat file1 | grep "def"
+6. cat file1 | grep -v "^[0-9]"
+7. cat file1 | grep -n "^$"
+8. ls -d
+
+# 
+
+
+pag : 63
+1. ls
+2. ls | sort -r
+3. ls -li
+4. ls -lr | sort -k 3
+5. ls -las>sortedfile
+
+
+#
+
+pag : 66
+1. echo type date | [:lower] [:upper]
+2.sed -i 's/^[0-9].*$//g' file1
+4.cat file1 | sed 's/ //g'
+5. wc file1
+6.grep -o -i mauris file1 | wc -1
+
+
+
+
+#
+
+
+
+
+pag :94
+1.echo "header" file1
+2.sed 2d file1, u for undo
+5.??c
+6. :cd \t
+7.yy ,p an the line 3
+8.dd
+10. :wd "bc v2"
+
+
+
+
+
+#
+
+
+pag :117
+ 
+run sleep 100&
+    ps -1 login off and login again
+ ps -1  
+  observe pid
+ 2. sleep 5s
+      echo "hello"
+
+#
+
+
+
+pag :118
+1.at now -3 minute
+2.at now +10 day
+3. "happy birthaday" | at now +1 day
+
+
+#
+
+
+pag : 120
+ crontab
+* * * * * >f10
+crontab -1
+at now +1 minute
+sleep 200&
+at -1
+at -r jobno(89)
+crontab -r
+
+
